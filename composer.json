@@ -1,0 +1,61 @@
+{
+    "name": "Mevetalgan/wp_git_composer",
+    "description": "Basic template for creating a composer + wpackagist controlled site",
+    "require": {
+        "wordpress": "4.9.*",
+        "yoast/wordpress-seo": "*",
+        "wpackagist-plugin/wp-polls": "*"
+    },
+    "require-dev": {
+        "wpackagist-plugin/debug-bar": "0.8.2",
+        "wpackagist-plugin/debug-bar-console": "0.3"
+    },
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "wordpress",
+                "type": "webroot",
+                "version": "4.9.8",
+                "dist": {
+                    "url": "https://github.com/WordPress/WordPress/archive/4.9.8.zip",
+                    "type": "zip"
+                },
+                "source": {
+                    "url": "https://github.com/WordPress/WordPress",
+                    "type": "git",
+                    "reference": "4.9.8"
+                },
+                "require": {
+                    "fancyguy/webroot-installer": "1.0.0"
+                }
+            }
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Acme": "src/"
+        }
+    },
+    "config": {
+        "vendor-dir": "content/vendor"
+    },
+    "extra": {
+        "installer-paths": {
+            "content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "content/themes/{$name}/": ["type:wordpress-theme"]
+        },
+        "webroot-dir"     : "wp",
+        "webroot-package" : "wordpress",
+        "wordpress-install-dir": "wp",
+        "dropin-paths": {
+            "content/languages/": ["vendor:koodimonni-language"],
+            "content/languages/plugins/": ["vendor:koodimonni-plugin-language"],
+            "content/languages/themes/": ["vendor:koodimonni-theme-language"]
+        }
+    }
+}
