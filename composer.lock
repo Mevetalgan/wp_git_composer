@@ -4,8 +4,22 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "db0355787fdb8c2b0674df8883f34c79",
+    "content-hash": "93d2d7178dd8f26a432fc447871fa542",
     "packages": [
+        {
+            "name": "Mevetalgan/wp_git_composer_theme",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:Mevetalgan/wp_git_composer_theme.git",
+                "reference": "6d4bf357b6d2cc0869ca23ba6c08b54b2f60d9ef"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-theme",
+            "time": "2018-08-23T15:08:45+00:00"
+        },
         {
             "name": "composer/installers",
             "version": "v1.5.0",
@@ -502,7 +516,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "mevetalgan/wp_git_composer_theme": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
