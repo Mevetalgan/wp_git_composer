@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "fe00bcc6c8d0769bfdff65538b10d44a",
@@ -12,13 +12,13 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:Mevetalgan/wp_git_composer_theme.git",
-                "reference": "6d4bf357b6d2cc0869ca23ba6c08b54b2f60d9ef"
+                "reference": "e0c17c0d5dadd40163ca11f1560fa17620157616"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-theme",
-            "time": "2018-08-23T15:08:45+00:00"
+            "time": "2018-08-24T11:55:20+00:00"
         },
         {
             "name": "composer/installers",
