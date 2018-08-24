@@ -37,11 +37,11 @@ define( 'WP_SITEURL', getenv( 'WP_SITEURL' ) );
 define( 'WP_HOME', getenv( 'WP_HOME' ) );
 
 # Sets the content location, related to what's defined on composer.json file
-define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/content' );
-define( 'WP_CONTENT_URL', WP_HOME . '/content');
+define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/../content' );
+define( 'WP_CONTENT_URL', WP_HOME . '/../content');
 
 # Sets the plugins location, related to what's defined on composer.json file
-define( 'WP_PLUGIN_URL',  WP_CONTENT_URL . '/plugins' );
+define( 'WP_PLUGIN_URL',  WP_CONTENT_URL . '/../plugins' );
 
 # Disables the embebeded editor
 define( 'DISALLOW_FILE_EDIT', true );
